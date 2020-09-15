@@ -1,6 +1,5 @@
 body {
     background-image:url("Public-toilet.jpg");
-    background-size: 100vw;
     background-repeat: no-repeat;
 } 
 
@@ -12,5 +11,4 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    
 }
