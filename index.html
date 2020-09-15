@@ -43,8 +43,12 @@
         <input name="feat-access" type="text">
 
         <!--Features Checkbox-->
+        <label class="switch">
+            <input type="checkbox">checked>
+            <span class="slider round"></span>
+        </label>
         <input name="feat-mirror" type="checkbox">
-        <label for="feat-mirror">Mirror</label>
+        <label class="switch" for="feat-mirror" >Mirror</label>
         <input name="feat-papertowels" type="checkbox">
         <label for="feat-papertowels">Paper towels</label>
         <input name="feat-perfume" type="checkbox">
@@ -52,6 +56,13 @@
         <input name="feat-soap" type="checkbox">
         <label for="feat-soap">Soap</label>
         </div>
+
+
+    
+     
+
+        
+        
 
         <!-- Number of stalls-->
         <label for="stalls">Number of stalls</label>
@@ -79,7 +90,42 @@
         <input type="submit">
 
 
-      
+
+
+        
+       <!--Rating stars-->
+       <form class="rating">
+        <label>
+          <input type="radio" name="stars" value="1" />
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="2" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="3" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>   
+        </label>
+        <label>
+          <input type="radio" name="stars" value="4" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="5" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+      </form>
        
        
 
