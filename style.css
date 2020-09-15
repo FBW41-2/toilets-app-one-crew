@@ -1,8 +1,8 @@
-/*body {
+body {
     background-image:url("Public-toilet.jpg");
     background-repeat: no-repeat;
     background-size: auto 900px;
-}*/
+}
 
 .switch {
     position: relative;
@@ -57,7 +57,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.rating {
+form .rating {
     display: inline-block;
     position: relative;
     height: 50px;
@@ -65,7 +65,7 @@ input:checked + .slider:before {
     font-size: 50px;
   }
   
-  .rating label {
+form .rating label {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,52 +73,70 @@ input:checked + .slider:before {
     cursor: pointer;
   }
   
-  .rating label:last-child {
+ form .rating label:last-child {
     position: static;
   }
   
-  .rating label:nth-child(1) {
+ form .rating label:nth-child(1) {
     z-index: 5;
   }
   
-  .rating label:nth-child(2) {
+ form .rating label:nth-child(2) {
     z-index: 4;
   }
   
-  .rating label:nth-child(3) {
+ form .rating label:nth-child(3) {
     z-index: 3;
   }
   
-  .rating label:nth-child(4) {
+  form .rating label:nth-child(4) {
     z-index: 2;
   }
   
-  .rating label:nth-child(5) {
+  form .rating label:nth-child(5) {
     z-index: 1;
   }
   
-  .rating label input {
+  form .rating label input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
   
-  .rating label .icon {
+  form .rating label .icon {
     float: left;
     color: transparent;
   }
   
-  .rating label:last-child .icon {
+  form .rating label:last-child .icon {
     color: #000;
   }
   
-  .rating:not(:hover) label input:checked ~ .icon,
+  form .rating:not(:hover) label input:checked ~ .icon,
   .rating:hover label:hover input ~ .icon {
     color: #09f;
   }
   
-  .rating label input:focus:not(:checked) ~ .icon:last-child {
+  form .rating label input:focus:not(:checked) ~ .icon:last-child {
     color: #000;
     text-shadow: 0 0 5px #09f;
   }
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#toilets-table, th, td {
+    border: 1px solid black;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
