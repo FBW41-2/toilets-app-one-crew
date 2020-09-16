@@ -1,7 +1,132 @@
 body {
-    background-image:url("Public-toilet.jpg");
-    background-repeat: no-repeat;
+    
+    background-color: teal;
+    margin: 50px 50px 50px ;
+    padding: 100px 100px 100px ;
+    color: white;
+    display:inline-block;
+   justify-content: start;
 } 
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0%;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196f3;
+}
+input:checked + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+nav form .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  
+nav form .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+nav form .rating label:last-child {
+    position: static;
+  }
+  
+ nav form .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+ form .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+ form .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  form .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  form .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  form .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  form .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  form .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  form .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #09f;
+  }
+  
+  form .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+ 
 
 * {
     margin: 0;
@@ -11,4 +136,11 @@ body {
 form {
     display: flex;
     flex-direction: column;
+}
+
+#toilets-table, th, td {
+    border: 1px solid black;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
 }

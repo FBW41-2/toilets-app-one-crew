@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Toilets App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
     <h1>Public Toilets in Germany</h1>
@@ -16,6 +16,7 @@
       <div>
         <label for="City">City</label>
       <select name="City" minlength="3" required>
+        <option></option>
         <option>Köln</option>
         <option>Düsseldorf</option>
         <option>Wuppertal</option>
@@ -24,28 +25,32 @@
     </div>
 
      <!-- Text filed single line -->
-     <label for="zip">Zip code</label>
-     <input name="zip" type="text" minlength="5" maxlength="5" required>
+    <label for="zip">Zip code</label>
+    <input name="zip" type="text" minlength="5" maxlength="5" required>
 
     <!-- Text filed single line -->
     <label for="street">Street</label>
     <input name="street" type="text" minlength="3" required>
 
      <!-- Text filed single line -->
-     <label for="streetnr">Hause Nr.</label>
-     <input name="streetnr" type="text" required>
+    <label for="streetnr">Hause Nr.</label>
+    <input name="streetnr" type="text" required>
 
       <!-- Text filed single line -->
-      <label for="name">Name of location</label>
-      <input name="name" type="text">
+    <label for="name">Name of location</label>
+    <input name="name" type="text">
 
-      <div class="features">
-        <p>Features</p>
+    <div class="features">
+    <p>Features</p>
         <!-- Features - single text -->
-        <label for="feat-access">Accessibility</label>
-        <input name="feat-access" type="text">
+       <label for="feat-access">Accessibility</label>
+       <input name="feat-access" type="text">
 
         <!--Features Checkbox-->
+        <!--<label class="switch">
+        <input type="checkbox">checked>
+        <span class="slider round"> </span>
+        </label>  -->
         <input name="feat-mirror" type="checkbox">
         <label for="feat-mirror">Mirror</label>
         <input name="feat-papertowels" type="checkbox">
@@ -59,66 +64,93 @@
       <!-- Number of stalls-->
       <label for="stalls">Stalls number</label>
       <input name="stalls" type="number" min="1" required>
-
-      <!-- Radio - first version-->
-<!-- <input type="radio" name="seats" value="1">
-      <input type="radio" name="seats" value="2">
-      <input type="radio" name="seats" value="3">
-      <input type="radio" name="seats" value="4">
-      <input type="radio" name="seats" value="5">
--->
-
- <!-- Radio seeond option-->
- <div class="rating" type="number" min="1" max="5" required>
-    <input id="seats-1" type="radio" name="rating" value="1">
-    <label for="seats-1">1 seat</label>
-    <input id="seats-2" type="radio" name="rating" value="2">
-    <label for="seats-2">2 seats</label>
-    <input id="seats-3" type="radio" name="rating" value="3">
-    <label for="seats-3">3 seats</label>
-    <input id="seats-4" type="radio" name="rating" value="4">
-    <label for="seats-4">4 seats</label>
-    <input id="seats-5" type="radio" name="rating" value="5">
-    <label for="seats-5">5 seats</label>
-    </div> 
+        
+       
+        <!-- Radio seeond option-->
+        <div class="radio">
+        <input id="seats-1" type="radio" name="rating" value="1">
+        <label for="seats-1">1 seat</label>
+        <input id="seats-2" type="radio" name="rating" value="2">
+        <label for="seats-2">2 seats</label>
+        <input id="seats-3" type="radio" name="rating" value="3">
+        <label for="seats-3">3 seats</label>
+        <input id="seats-4" type="radio" name="rating" value="4">
+        <label for="seats-4">4 seats</label>
+        <input id="seats-5" type="radio" name="rating" value="5">
+        <label for="seats-5">5 seats</label>
+        </div> 
 
 
-    <form class="rating">
+        <!-- Submit button-->
+        <input type="submit">
+
+
+
+
+
+       <!--Rating stars-->
+       <div>
+       <form class="rating">
         <label>
-          <input type="radio" name="seats" value="1" />
-          <span class="icon"><i class="fas fa-toilet"></i></span>
+          <input type="radio" name="stars" value="1" />
+          <span class="icon">★</span>
         </label>
         <label>
-          <input type="radio" name="seats" value="2" />
+          <input type="radio" name="stars" value="2" />
           <span class="icon">★</span>
           <span class="icon">★</span>
         </label>
         <label>
-          <input type="radio" name="seats" value="3" />
+          <input type="radio" name="stars" value="3" />
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>   
         </label>
         <label>
-          <input type="radio" name="seats" value="4" />
+          <input type="radio" name="stars" value="4" />
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>
         </label>
         <label>
-          <input type="radio" name="seats" value="5" />
+          <input type="radio" name="stars" value="5" />
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>
           <span class="icon">★</span>
         </label>
+      </form>
 
-      <!-- Submit button-->
-      <input type="submit">
-   
-</form>
+      </div>
 
+
+
+
+
+
+
+
+
+
+
+      </table>
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    
 </body>
 </html>
