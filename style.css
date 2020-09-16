@@ -1,7 +1,6 @@
 body {
-    background-image:url("Public-toilet.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 900px;
+    
+    background-color: teal;
     margin: 50px 50px 50px ;
     padding: 100px 100px 100px ;
     color: white;
@@ -62,7 +61,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-form .rating {
+nav form .rating {
     display: inline-block;
     position: relative;
     height: 50px;
@@ -70,7 +69,7 @@ form .rating {
     font-size: 50px;
   }
   
-form .rating label {
+nav form .rating label {
     position: absolute;
     top: 0;
     left: 0;
@@ -78,11 +77,11 @@ form .rating label {
     cursor: pointer;
   }
   
- form .rating label:last-child {
+nav form .rating label:last-child {
     position: static;
   }
   
- form .rating label:nth-child(1) {
+ nav form .rating label:nth-child(1) {
     z-index: 5;
   }
   
